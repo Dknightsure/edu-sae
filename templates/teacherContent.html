@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="../static/css/bootstrap.min.css" rel="stylesheet" />
+ </head> 
+ <body>
+    <div class="container">
+        <div class="col-md-12">
+            <ul class="nav nav-tabs">
+                <li role="presentation" id="personinfo" class="active mynav"><a href="javascript:void(0)">个人信息</a></li>
+                <li role="presentation" id="publishedcourse" class="mynav"><a href="javascript:void(0)">已发布课程</a></li>
+                <li role="presentation" id="publishcourse" class="mynav"><a href="javascript:void(0)">发布课程</a></li>
+                <form class="navbar-form navbar-right" role="search" action="/signout">
+                    <button type="submit" class="btn btn-default">Sign Out</button>
+                </form>
+            </ul>
+        </div>
+        <div class="col-md-12" id="mycontent">
+
+        </div>
+        <div class="col-md-12" id="choosedstudent">
+
+        </div>
+    </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="dialog_do_or_not" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">提示：</h4>
+              </div>
+              <div class="modal-body">
+                <p class="text-info">您确定要执行此操作吗？</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_allow_to_do">确认</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="dialog_info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">提示：</h4>
+              </div>
+              <div class="modal-body">
+                <p class="text-danger"> &nbsp;</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <script src="../static/js/jquery-2.1.4.min.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
+  <script src="../static/js/teacherContent.js"></script>
+ </body>
+</html>
