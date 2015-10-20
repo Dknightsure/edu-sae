@@ -6,7 +6,7 @@ from sae.const import (MYSQL_HOST, MYSQL_HOST_S,MYSQL_PORT, MYSQL_USER, MYSQL_PA
 
 #   链接数据库
 def connect_db():
-    g.db = MySQLdb.connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASS,MYSQL_DB, port=int(MYSQL_PORT))
+    g.db = MySQLdb.connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASS,MYSQL_DB, port=int(MYSQL_PORT), charset="utf8")
 
 
 #   断开数据库链接
